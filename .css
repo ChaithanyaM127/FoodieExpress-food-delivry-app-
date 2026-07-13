@@ -1,311 +1,915 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ================= GLOBAL ================= */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins', Arial, sans-serif;
-}
-
-
-html{
-    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
 }
 
 
 body{
 
-    background:#f5f7fb;
+    background:#fff8f0;
+
+    color:#333;
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+
+.header{
+
+    width:100%;
+
+    background:white;
+
+    padding:20px 50px;
+
+    position:relative;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+
+
+/* ================= RIGHT BUTTONS ================= */
+
+
+.top-buttons{
+
+    position:absolute;
+
+    right:50px;
+
+    top:25px;
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+
+
+.top-buttons button{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#ff5722;
+
+    color:white;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+.top-buttons button:hover{
+
+    background:#e64a19;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+
+
+/* ================= BRAND CENTER ================= */
+
+
+.brand{
+
+    text-align:center;
+
+}
+
+
+
+.brand h1{
+
+    font-size:36px;
+
+    font-weight:700;
+
+    color:#ff5722;
+
+}
+
+
+
+.brand p{
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+
+
+
+
+/* ================= NAVIGATION ================= */
+
+
+.menu{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    margin-top:25px;
+
+}
+
+
+
+.menu a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:0.3s;
+
+}
+
+
+
+.menu a:hover{
+
+    color:#ff5722;
+
+}
+
+
+
+
+
+/* ================= ALL SECTION ================= */
+
+
+.category-section,
+.food-section,
+.restaurant-section,
+.offer-section,
+.rating-section{
+
+    padding:35px 50px;
+
+}
+
+
+
+
+h2{
+
+    font-size:26px;
+
+    margin-bottom:20px;
+
     color:#222;
 
 }
 
 
-/* HEADER */
-
-header{
-
-    width:100%;
-    background:#0b1f3a;
-    padding:20px 0;
-    position:fixed;
-    top:0;
-    z-index:1000;
-
-}
 
 
-nav{
 
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+/* ================= HORIZONTAL SCROLL ================= */
+
+
+.category-section div,
+.food-section div,
+.restaurant-section div,
+.offer-section div{
+
+    scrollbar-width:none;
 
 }
 
 
-/* NAME */
 
-.logo{
+.category-section div::-webkit-scrollbar,
+.food-section div::-webkit-scrollbar,
+.restaurant-section div::-webkit-scrollbar,
+.offer-section div::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+/* ================= GLOBAL BACKGROUND ================= */
+
+body{
+    margin:0;
+    padding:0;
+    background:#fff7f0;
+    font-family: Arial, sans-serif;
+    color:#222;
+}
+
+
+/* ================= ALL SECTIONS ================= */
+
+section{
+    background:#ffffff;
+    margin:25px;
+    padding:25px;
+    border-radius:20px;
+}
+
+
+/* ================= HEADER ================= */
+
+.header{
+    background:#ff6b00;
+    color:white;
+    padding:25px;
+    border-radius:0 0 25px 25px;
+}
+
+
+/* ================= SECTION HEADINGS ================= */
+
+h2{
+    color:#ff6b00;
+    margin-bottom:20px;
+}
+
+
+/* ================= FOOD CARDS ================= */
+
+.food-section div div,
+.restaurant-section div div{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+/* ================= IMAGES ================= */
+
+img{
+    border-radius:15px;
+    object-fit:cover;
+}
+
+
+/* ================= BUTTONS ================= */
+
+button{
+
+    background:#ff6b00;
 
     color:white;
-    font-size:30px;
-    font-weight:bold;
-    margin-bottom:15px;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    font-weight:600;
 
 }
 
 
-/* MENU */
+button:hover{
 
-nav ul{
+    background:#e85d00;
+
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:0 12px;
+
+    font-weight:600;
+
+}
+
+
+/* ================= CATEGORY ITEMS ================= */
+
+.category-section div div{
+
+    background:#fff;
+
+    padding:15px;
+
+    border-radius:20px;
+
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:30px;
+
+}
+
+/* ================= FOOD CATEGORIES ================= */
+
+.category-section{
+
+    margin:25px;
+
+    padding:25px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+}
+
+
+.category-section h2{
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.category-section > div{
 
     display:flex;
-    justify-content:center;
-    align-items:center;
-
-    list-style:none;
 
     gap:35px;
 
-}
+    overflow-x:auto;
 
-
-nav ul li a{
-
-    text-decoration:none;
-    color:white;
-    font-size:17px;
-
-}
-
-
-nav ul li a:hover{
-
-    color:#00bfff;
+    padding:20px 10px;
 
 }
 
 
 
-/* HOME SECTION */
+.category-section > div > div{
 
-
-#home{
-
-    min-height:100vh;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    min-width:110px;
 
     text-align:center;
 
-    background:linear-gradient(
-        135deg,
-        #0f2027,
-        #203a43,
-        #2c5364
-    );
+    background:#fff;
 
-    color:white;
+    padding:15px;
 
-}
+    border-radius:20px;
 
-
-
-.home-content h1{
-
-    font-size:55px;
-    margin-bottom:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
 
 }
 
 
 
-.home-content h1 span{
+.category-section img{
 
-    color:#00bfff;
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    object-fit:cover;
 
 }
 
 
 
-.home-content h2{
+.category-section h4{
+
+    margin-top:12px;
+
+    font-size:15px;
+
+}
+
+
+
+/* ================= FOOD SECTIONS ================= */
+
+
+.food-section{
+
+    margin:25px;
+
+    padding:25px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+}
+
+
+
+.food-section h2{
 
     font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.food-section > div{
+
+    display:flex;
+
+    gap:35px;
+
+    overflow-x:auto;
+
+    padding:20px 10px;
+
+}
+
+
+
+.food-section > div > div{
+
+    min-width:180px;
+
+    background:white;
+
+    text-align:center;
+
+    padding:15px;
+
+    padding-bottom:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,0.10);
+
+    transition:0.3s;
+
+}
+
+
+
+.food-section > div > div:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.food-section img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:15px;
+
+    object-fit:cover;
+
+}
+
+
+
+.food-section h3{
+
+    margin:12px 0;
+
+    font-size:18px;
+
+}
+
+
+
+.food-section p{
+
+    margin:8px;
+
+    font-size:15px;
+
+}
+
+
+
+/* ================= BUTTON STYLE ================= */
+
+
+button{
+
+    background:#ff6b00;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    margin-top:10px;
+
+}
+
+
+
+button:hover{
+
+    background:#e85d00;
+
+}
+
+/* ================= FEATURED RESTAURANTS ================= */
+
+.restaurant-section{
+
+    margin:25px;
+
+    padding:25px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+}
+
+
+
+.restaurant-section h2{
+
+    font-size:28px;
+
     margin-bottom:20px;
 
 }
 
 
 
-.home-content p{
+.restaurant-section > div{
 
-    max-width:700px;
-    font-size:18px;
-    line-height:1.6;
-    margin:auto;
+    display:flex;
+
+    gap:35px;
+
+    overflow-x:auto;
+
+    padding:20px 10px;
 
 }
 
 
 
-.btn{
+.restaurant-section > div > div{
 
-    display:inline-block;
+    min-width:220px;
+
+    text-align:center;
+
+    background:white;
+
+    padding:15px;
+
+    padding-bottom:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,0.10);
+
+    transition:0.3s;
+
+}
+
+
+
+.restaurant-section > div > div:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.restaurant-section img{
+
+    width:180px;
+
+    height:120px;
+
+    border-radius:15px;
+
+    object-fit:cover;
+
+}
+
+
+
+.restaurant-section h3{
+
+    margin-top:15px;
+
+    font-size:20px;
+
+}
+
+
+
+/* ================= TODAY'S OFFERS ================= */
+
+
+.offer-section{
+
+    margin:25px;
+
+    padding:25px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+}
+
+
+
+.offer-section h2{
+
+    font-size:28px;
+
+}
+
+
+
+.offer-section > div{
+
+    display:flex;
+
+    gap:25px;
+
+    overflow-x:auto;
+
+    padding:20px 10px;
+
+}
+
+
+
+.offer-section > div > div{
+
+    min-width:250px;
+
+    background:#fff7f0;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+.offer-section h3{
+
+    color:#ff6b00;
+
+    font-size:22px;
+
+}
+
+
+
+.offer-section p{
+
+    margin:15px 0;
+
+}
+
+
+
+/* ================= RATING SECTION ================= */
+
+
+.rating-section{
+
+    margin:25px;
+
+    padding:35px;
+
+    background:white;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+.rating-section h2{
+
+    font-size:32px;
+
+}
+
+
+
+.rating-section p{
+
+    font-size:18px;
+
+}
+
+
+
+/* ================= FOOTER ================= */
+
+
+footer{
+
     margin-top:30px;
-    padding:14px 35px;
 
-    background:#00bfff;
+    background:#222;
+
+    color:white;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+}
+
+
+
+footer h2{
+
+    color:white;
+
+}
+
+
+
+footer a{
+
     color:white;
 
     text-decoration:none;
-    border-radius:30px;
 
-    font-size:18px;
-    transition:0.3s;
+    margin:0 15px;
 
 }
 
 
 
-.btn:hover{
+footer a:hover{
 
-    background:white;
-    color:#0b1f3a;
-
-}
-
-
-
-/* COMMON SECTION */
-
-
-section{
-
-    padding:90px 10%;
-
-}
-
-
-.heading{
-
-    text-align:center;
-    font-size:38px;
-    margin-bottom:40px;
-    color:#0b1f3a;
+    color:#ff6b00;
 
 }
 
 
 
-/* ABOUT */
+footer p{
+
+    margin:15px 0;
+
+}
+
+/* ================= SCROLL BAR DESIGN ================= */
 
 
-#about p{
+.category-section div::-webkit-scrollbar,
+.food-section div::-webkit-scrollbar,
+.restaurant-section div::-webkit-scrollbar,
+.offer-section div::-webkit-scrollbar{
 
-    max-width:900px;
-    margin:auto;
-    text-align:center;
-
-    font-size:18px;
-    line-height:1.8;
+    height:8px;
 
 }
 
 
 
-/* SKILLS */
+.category-section div::-webkit-scrollbar-thumb,
+.food-section div::-webkit-scrollbar-thumb,
+.restaurant-section div::-webkit-scrollbar-thumb,
+.offer-section div::-webkit-scrollbar-thumb{
 
+    background:#ff6b00;
 
-.skill-container{
-
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-
-}
-
-
-
-.skill-box{
-
-    background:white;
-    width:280px;
-
-    padding:30px;
-
-    border-radius:15px;
-
-    text-align:center;
-
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
-
-    transition:0.3s;
+    border-radius:20px;
 
 }
 
 
 
-.skill-box:hover{
-
-    transform:translateY(-10px);
-
-}
+/* ================= SMOOTH ANIMATION ================= */
 
 
+.food-section > div > div,
+.restaurant-section > div > div,
+.category-section > div > div,
+.offer-section > div > div{
 
-.skill-box h3{
-
-    color:#0b1f3a;
-    margin-bottom:20px;
+    animation:cardAnimation 0.5s ease;
 
 }
 
 
 
-.skill-box p{
+@keyframes cardAnimation{
 
-    line-height:1.8;
+    from{
 
-}
+        opacity:0;
 
+        transform:translateY(20px);
 
-
-/* PROJECTS */
-
-
-.project-container{
-
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-
-}
+    }
 
 
+    to{
 
-.project-card{
+        opacity:1;
 
-    background:white;
+        transform:translateY(0);
 
-    width:320px;
-
-    padding:30px;
-
-    border-radius:15px;
-
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
-
-    transition:0.3s;
+    }
 
 }
 
 
 
-.project-card:hover{
+/* ================= IMAGE HOVER EFFECT ================= */
+
+
+img{
+
+    transition:0.3s ease;
+
+}
+
+
+
+img:hover{
 
     transform:scale(1.05);
 
@@ -313,160 +917,102 @@ section{
 
 
 
-.project-card h3{
+/* ================= MOBILE RESPONSIVE DESIGN ================= */
 
-    color:#00a6e8;
-    margin-bottom:15px;
 
-}
+@media(max-width:768px){
 
 
+    .header{
 
-.project-card p{
+        padding:20px;
 
-    line-height:1.6;
-
-}
-
-
-
-/* INTERNSHIP */
-
-
-#internship p{
-
-    text-align:center;
-    font-size:18px;
-    line-height:2;
-
-}
-
-
-
-/* CONTACT */
-
-
-#contact{
-
-    text-align:center;
-
-}
-
-
-
-#contact p{
-
-    font-size:18px;
-    margin:15px;
-
-}
-
-
-
-/* FOOTER */
-
-
-footer{
-
-    background:#0b1f3a;
-
-    color:white;
-
-    text-align:center;
-
-    padding:20px;
-
-}
-
-
-
-/* RESPONSIVE */
-
-
-@media(max-width:900px){
-
-
-nav{
-
-    flex-direction:column;
-
-}
-
-
-nav ul{
-
-    margin-top:20px;
-    flex-wrap:wrap;
-    justify-content:center;
-
-}
-
-
-.home-content h1{
-
-    font-size:40px;
-
-}
-
-
-.home-content h2{
-
-    font-size:22px;
-
-}
-
-
-}
-
-/* Scroll Animation */
-
-section{
-
-    opacity:0;
-    transform:translateY(40px);
-    transition:1s;
-
-}
-
-
-section.show{
-
-    opacity:1;
-    transform:translateY(0);
-
-}
-
-
-
-/* Button Animation */
-
-.btn{
-
-    animation:pulse 2s infinite;
-
-}
-
-
-@keyframes pulse{
-
-
-    0%{
-
-        box-shadow:0 0 0 0 rgba(0,191,255,0.7);
+        text-align:center;
 
     }
 
 
-    70%{
 
-        box-shadow:0 0 0 20px rgba(0,191,255,0);
+    .brand h1{
+
+        font-size:26px;
 
     }
 
 
-    100%{
 
-        box-shadow:0 0 0 0 rgba(0,191,255,0);
+    .menu{
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:10px;
+
+    }
+
+
+
+    .menu a{
+
+        margin:5px;
+
+        font-size:14px;
+
+    }
+
+
+
+    .top-buttons button{
+
+        margin:5px;
+
+    }
+
+
+
+    section{
+
+        margin:15px;
+
+        padding:15px;
+
+    }
+
+
+
+    .category-section h2,
+    .food-section h2,
+    .restaurant-section h2,
+    .offer-section h2{
+
+        font-size:22px;
+
+    }
+
+
+
+    .food-section > div > div{
+
+        min-width:160px;
+
+    }
+
+
+
+    .restaurant-section > div > div{
+
+        min-width:200px;
+
+    }
+
+
+
+    .offer-section > div > div{
+
+        min-width:220px;
 
     }
 
@@ -475,93 +1021,31 @@ section.show{
 
 
 
-/* Project Card Animation */
+/* ================= APP PREMIUM TOUCH ================= */
 
 
-.project-card,
-.skill-box{
+.food-section,
+.restaurant-section,
+.category-section,
+.offer-section,
+.rating-section{
 
-    cursor:pointer;
+    border:1px solid rgba(0,0,0,0.05);
+
+}
+
+
+
+button{
+
+    transition:0.3s ease;
 
 }
 
 
 
-/* Mobile Menu Improvement */
+button:active{
 
-@media(max-width:700px){
-
-
-nav ul{
-
-    gap:15px;
-
-}
-
-
-.logo{
-
-    font-size:22px;
-
-}
-
-header{
-
-    width:100%;
-    background:#0b1f3a;
-    padding:20px 0;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:1000;
-
-}
-
-
-.navbar{
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-
-}
-
-
-.logo{
-
-    color:white;
-    font-size:30px;
-    font-weight:bold;
-    margin-bottom:15px;
-
-}
-
-
-.menu{
-
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    gap:35px;
-
-}
-
-
-.menu a{
-
-    color:white;
-    text-decoration:none;
-    font-size:17px;
-
-}
-
-
-.menu a:hover{
-
-    color:#00bfff;
-
-}
+    transform:scale(0.95);
 
 }
